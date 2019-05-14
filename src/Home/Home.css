@@ -1,0 +1,41 @@
+.body {
+    /* background: url(https://images.unsplash.com/photo-1533462506003-13c20d204b58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80); */
+    /* background-color: #7a3e96; */
+    background: url(https://images.unsplash.com/photo-1519514184004-05d46455867a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);
+    /* background: url(https://images.unsplash.com/photo-1532689193429-29caa23e5268?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80); */
+    /* background: url(https://cdn.pixabay.com/photo/2018/04/30/12/23/tower-3362555_1280.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'UnifrakturMaguntia', cursive;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 56px;
+    text-align: center;
+    /* color: rgba(255,255,255,0.7); */
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .container {
+    display:flex;
+    justify-content: space-evenly;
+  }
+  
+  .nav {
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000;
+    
+  }
+  li {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  img {
+    width: 20vw;
+    margin: 2vw;
+    box-shadow: 2px 2px 4px #000000;
+  }
