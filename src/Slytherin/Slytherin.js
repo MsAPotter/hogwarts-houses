@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import './Gryffindor.css';
+import './Slytherin';
 
-class Gryffindor extends Component {
-
+class Slytherin extends Component {
     render() {
 
-        let gryffins = [];
+        let slys = [];
 
         for (var i=0; i < this.props.characters.length; i++) {
-            if (this.props.characters[i].house === "Gryffindor") {
-                gryffins.push(this.props.characters[i]);
+            if (this.props.characters[i].house === "Slytherin") {
+                slys.push(this.props.characters[i]);
             }
         }
 
-       let gryffinCards = gryffins.map((character, index) => {
+       let slyCards = slys.map((character, index) => {
             return (
                 <div className="houseCard" key={index} >
                     <h1 className="houseCard-name">{character.name}</h1>
@@ -25,10 +24,10 @@ class Gryffindor extends Component {
             })
             
         return (
-            <div className="card-container">{gryffinCards}</div>
+            <div className="card-container">{slyCards}</div>
 
             )
         }
-    }   
+}
 
-export default Gryffindor;
+export default Slytherin;
