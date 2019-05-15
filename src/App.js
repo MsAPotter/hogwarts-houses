@@ -20,8 +20,9 @@ class App extends Component {
   }
 
   componentDidMount () {
-    axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$63GTbZLWfMtyBrCfDRaRyus98dC5tg6PikwPTPaVUgtJkUeEBsJpy')
-    // axios.get('localhost:4000/hp/')
+    // axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$63GTbZLWfMtyBrCfDRaRyus98dC5tg6PikwPTPaVUgtJkUeEBsJpy')
+    axios.get('//localhost:3000/hp/')
+    
       .then((res) => {
         console.log(res)
         this.setState({
