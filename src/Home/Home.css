@@ -7,7 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'UnifrakturMaguntia', cursive;
-    height: 100vh;
+    /* height: 100vh; */
+    border: 2px solid rgba(66, 15, 15, 0.158);
   }
   
   h1 {
@@ -38,4 +39,28 @@
     width: 20vw;
     margin: 2vw;
     box-shadow: 2px 2px 4px #000000;
+  }
+
+  .newCharacterForm {
+    color: white;
+    text-align: center;
+    background: #be9585;
+    width: 25%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px auto;
+  }
+  
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+  }
+  input {
+    margin: 5px;
+  }
+
+  button {
+    margin: 15px;
   }

@@ -17,7 +17,18 @@ class App extends Component {
       // characters: characters   ==> if manually pulling from hard-coded json
       characters: []
     }
+
+    this.createCharacter = this.createCharacter.bind(this)
   }
+
+  createCharacter(newCharacter) {
+    console.log(newCharacter)
+    let newCharacters = this.state.characters.concat([newCharacter])
+    console.log(newCharacters)
+    this.setState({characters: newCharacters})
+  }
+
+
 
   componentDidMount () {
     // axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$63GTbZLWfMtyBrCfDRaRyus98dC5tg6PikwPTPaVUgtJkUeEBsJpy')
@@ -42,7 +53,10 @@ class App extends Component {
           <Route
             exact path="/"
             render={routerProps => (
-              <Home {...routerProps} {...this.state} />
+              <Home {...routerProps} 
+              {...this.state}
+              createCharacter={this.createCharacter}
+               />
             )}
           />
 
